@@ -1,0 +1,133 @@
+SELECT sag1.name,gname,de,
+SUM(IFNULL(9490_9491,0)) AS '9490_9491',
+SUM(IFNULL(9492_9493,0)) AS '9492_9493',
+SUM(IFNULL(9494_9495,0)) AS '9494_9495',
+SUM(IFNULL(9496_9497,0)) AS '9496_9497',
+SUM(IFNULL(9498_9499,0)) AS '9498_9499',
+SUM(IFNULL(9500_9501,0)) AS '9500_9501',
+SUM(IFNULL(9502_9503,0)) AS '9502_9503',
+SUM(IFNULL(9504_9505,0)) AS '9504_9505',
+SUM(IFNULL(9506_9507,0)) AS '9506_9507',
+SUM(IFNULL(9508_9509,0)) AS '9508_9509',
+SUM(IFNULL(9510_9511,0)) AS '9510_9511',
+SUM(IFNULL(9512_9513,0)) AS '9512_9513',
+SUM(IFNULL(9514_9515,0)) AS '9514_9515',
+SUM(IFNULL(9516_9517,0)) AS '9516_9517',
+SUM(IFNULL(9518_9519,0)) AS '9518_9519',
+SUM(IFNULL(9520_9521,0)) AS '9520_9521',
+SUM(IFNULL(9522_9523,0)) AS '9522_9523',
+SUM(IFNULL(9524_9525,0)) AS '9524_9525',
+SUM(IFNULL(9526_9527,0)) AS '9526_9527',
+SUM(IFNULL(9528_9529,0)) AS '9528_9529',
+SUM(IFNULL(9530_9531,0)) AS '9530_9531',
+SUM(IFNULL(9532_9533,0)) AS '9532_9533',
+SUM(IFNULL(9534_9535,0)) AS '9534_9535',
+SUM(IFNULL(9536_9537,0)) AS '9536_9537',
+SUM(IFNULL(9538_9539,0)) AS '9538_9539',
+SUM(IFNULL(9540_9541,0)) AS '9540_9541',
+SUM(IFNULL(9542_9543,0)) AS '9542_9543',
+SUM(IFNULL(9544_9545,0)) AS '9544_9545',
+SUM(IFNULL(9546_9547,0)) AS '9546_9547',
+SUM(IFNULL(9548_9549,0)) AS '9548_9549',
+SUM(IFNULL(9550_9551,0)) AS '9550_9551',
+SUM(IFNULL(9552_9553,0)) AS '9552_9553',
+SUM(IFNULL(9554_9555,0)) AS '9554_9555',
+SUM(IFNULL(9556_9557,0)) AS '9556_9557',
+SUM(IFNULL(9558_9559,0)) AS '9558_9559',
+SUM(IFNULL(9560_9561,0)) AS '9560_9561',
+SUM(IFNULL(9562_9563,0)) AS '9562_9563',
+SUM(IFNULL(9564_9565,0)) AS '9564_9565'
+FROM
+(
+SELECT sag.name,gname,de,
+CASE WHEN dataelementid IN (9490,9491) THEN sag.value END AS '9490_9491',
+CASE WHEN dataelementid IN (9492,9493) THEN sag.value END AS '9492_9493',
+CASE WHEN dataelementid IN (9494,9495) THEN sag.value END AS '9494_9495',
+CASE WHEN dataelementid IN (9496,9497) THEN sag.value END AS '9496_9497',
+CASE WHEN dataelementid IN (9498,9499) THEN sag.value END AS '9498_9499',
+CASE WHEN dataelementid IN (9500,9501) THEN sag.value END AS '9500_9501',
+CASE WHEN dataelementid IN (9502,9503) THEN sag.value END AS '9502_9503',
+CASE WHEN dataelementid IN (9504,9505) THEN sag.value END AS '9504_9505',
+CASE WHEN dataelementid IN (9506,9507) THEN sag.value END AS '9506_9507',
+CASE WHEN dataelementid IN (9508,9509) THEN sag.value END AS '9508_9509',
+CASE WHEN dataelementid IN (9510,9511) THEN sag.value END AS '9510_9511',
+CASE WHEN dataelementid IN (9512,9513) THEN sag.value END AS '9512_9513',
+CASE WHEN dataelementid IN (9514,9515) THEN sag.value END AS '9514_9515',
+CASE WHEN dataelementid IN (9516,9517) THEN sag.value END AS '9516_9517',
+CASE WHEN dataelementid IN (9518,9519) THEN sag.value END AS '9518_9519',
+CASE WHEN dataelementid IN (9520,9521) THEN sag.value END AS '9520_9521',
+CASE WHEN dataelementid IN (9522,9523) THEN sag.value END AS '9522_9523',
+CASE WHEN dataelementid IN (9524,9525) THEN sag.value END AS '9524_9525',
+CASE WHEN dataelementid IN (9526,9527) THEN sag.value END AS '9526_9527',
+CASE WHEN dataelementid IN (9528,9529) THEN sag.value END AS '9528_9529',
+CASE WHEN dataelementid IN (9530,9531) THEN sag.value END AS '9530_9531',
+CASE WHEN dataelementid IN (9532,9533) THEN sag.value END AS '9532_9533',
+CASE WHEN dataelementid IN (9534,9535) THEN sag.value END AS '9534_9535',
+CASE WHEN dataelementid IN (9536,9537) THEN sag.value END AS '9536_9537',
+CASE WHEN dataelementid IN (9538,9539) THEN sag.value END AS '9538_9539',
+CASE WHEN dataelementid IN (9540,9541) THEN sag.value END AS '9540_9541',
+CASE WHEN dataelementid IN (9542,9543) THEN sag.value END AS '9542_9543',
+CASE WHEN dataelementid IN (9544,9545) THEN sag.value END AS '9544_9545',
+CASE WHEN dataelementid IN (9546,9547) THEN sag.value END AS '9546_9547',
+CASE WHEN dataelementid IN (9548,9549) THEN sag.value END AS '9548_9549',
+CASE WHEN dataelementid IN (9550,9551) THEN sag.value END AS '9550_9551',
+CASE WHEN dataelementid IN (9552,9553) THEN sag.value END AS '9552_9553',
+CASE WHEN dataelementid IN (9554,9555) THEN sag.value END AS '9554_9555',
+CASE WHEN dataelementid IN (9556,9557) THEN sag.value END AS '9556_9557',
+CASE WHEN dataelementid IN (9558,9559) THEN sag.value END AS '9558_9559',
+CASE WHEN dataelementid IN (9560,9561) THEN sag.value END AS '9560_9561',
+CASE WHEN dataelementid IN (9562,9563) THEN sag.value END AS '9562_9563',
+CASE WHEN dataelementid IN (9564,9565) THEN sag.value END AS '9564_9565'
+FROM
+(
+	SELECT asd.name,gname,asd1.dataelementid,asd1.value,asd.de
+	FROM
+	(
+		SELECT * 
+		FROM
+		(		
+		SELECT os.idlevel3, os.idlevel4,ou.organisationunitid, ou.name , og.name AS gname
+		FROM orgunitgroup og 
+		INNER JOIN orgunitgroupmembers ogm ON ogm.orgunitgroupid = og.orgunitgroupid
+		INNER JOIN organisationunit ou ON ou.organisationunitid = ogm.organisationunitid
+		INNER JOIN _orgunitstructure os ON os.organisationunitid = ou.organisationunitid
+		WHERE og.name IN('CHCs','Sub District Hospitals','District Hospitals') 
+		AND os.idlevel3 IN (
+			SELECT organisationunitid
+			FROM organisationunit ou
+			WHERE NAME LIKE 'Amritsar District'
+			)
+		)o1	
+		INNER JOIN
+		(
+		SELECT CASE WHEN dataelementid=1 THEN 'SP' WHEN dataelementid=2 THEN 'F' END AS 'de'
+		FROM dataelement WHERE dataelementid<3	
+		)o2
+		ON 1=1
+	)asd
+
+	LEFT JOIN
+
+	(
+	SELECT dv.dataelementid,dv.categoryoptioncomboid,dv.value,dv.sourceid,p.startdate,
+	CASE WHEN dv.dataelementid IN (9490,9492,9494,9496,9498,9500,9502,9504,9506,9508,9510,9512,9514,9516,9518,9520,9522,9524,9526,
+					9528,9530,9532,9534,9536,9538,9540,9542,9544,9546,9548,9550,9552,9554,9556,9558,9560,9562,9564) THEN 'SP'
+		WHEN dv.dataelementid IN (9491,9493,9495,9497,9499,9501,9503,9505,9507,9509,9511,9513,9515,9517,9519,9521,9523,9525,9527,9529,
+					9531,9533,9535,9537,9539,9541,9543,9545,9547,9549,9551,9553,9555,9557,9559,9561,9563,9565) THEN 'F' END AS 'de'				
+	FROM datavalue dv
+	INNER JOIN period p ON p.periodid=dv.periodid 
+	WHERE dv.dataelementid IN (9490,9492,9494,9496,9498,9500,9502,9504,9506,9508,9510,9512,9514,9516,9518,9520,9522,9524,9526,
+					9528,9530,9532,9534,9536,9538,9540,9542,9544,9546,9548,9550,9552,9554,9556,9558,9560,9562,9564,
+				9491,9493,9495,9497,9499,9501,9503,9505,9507,9509,9511,9513,9515,9517,9519,9521,9523,9525,9527,9529,
+					9531,9533,9535,9537,9539,9541,9543,9545,9547,9549,9551,9553,9555,9557,9559,9561,9563,9565	
+	)
+	AND dv.categoryoptioncomboid IN (1)
+	AND YEAR(p.startdate) = YEAR('2013-01-01')
+	AND MONTH(p.startdate) BETWEEN 7 AND 9
+	)asd1
+	ON asd.organisationunitid = asd1.sourceid
+	AND asd.de=asd1.de
+)sag	
+)sag1
+GROUP BY NAME,de
+ORDER BY NAME,gname,de DESC
